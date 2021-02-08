@@ -4,6 +4,7 @@ import { useStateValue } from '../../context/StateProvider';
 import Subtotal from '../Subtotal/Subtotal';
 import CheckoutProduct from '../CheckoutProduct/CheckoutProduct';
 import FlipMove from 'react-flip-move';
+import Slider from '../Slider/Slider';
 
 const Checkout = () => {
   const [{ basket, user }, dispatch] = useStateValue();

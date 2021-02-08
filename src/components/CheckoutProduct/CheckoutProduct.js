@@ -35,7 +35,9 @@ const CheckoutProduct = forwardRef(
                 <p key={i}>🌟</p>
               ))}
           </div>
-          <button onClick={removeFromBasket}>Remove from Basket</button>
+          <button onClick={removeFromBasket} style={{ cursor: 'pointer' }}>
+            Remove from Basket
+          </button>
         </div>
       </div>
     );

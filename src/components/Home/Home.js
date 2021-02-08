@@ -2,6 +2,17 @@ import React from 'react';
 import './Home.css';
 import Product from '../Product/Product';
 import { v4 as uuidv4 } from 'uuid';
+import 'react-slideshow-image';
+import Slider from '../Slider/Slider';
+// import { AnimateData } from '../AnimateHero/AnimateData';
+// import Hero from '../AnimateHero/Hero';
+
+/**
+ * https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg
+ * @
+ *
+ * http://pngimg.com/uploads/computer_pc/computer_pc_PNG17490.png
+ */
 
 const Home = () => {
   return (
@@ -9,15 +20,15 @@ const Home = () => {
       <div className='home__container'>
         <img
           className='home__image'
-          src='https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg'
+          src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_45M_v2_1x._CB432458380_.jpg'
           alt='amazon-hero'
         />
         <div className='home__row'>
           <Product
             id={uuidv4()}
-            title='BroadLink Smart Home Hub-WiFi Remote Control IR Blaster for Smart Life Home Automation, TV Remote, Works with Alexa, Google Home, IFTTT (RM4 Mini)'
-            price={23.99}
-            image='https://images-na.ssl-images-amazon.com/images/I/51GtehXCyOL._AC_SL1000_.jpg'
+            title='Dell OptiPlex 24 7000 Series 7460 23.8" Full HD All-in-One Desktop - 8th Gen Intel 6-Core i5-8500 Processor up to 4.10 GHz, 16GB RAM, 512GB SSD + 2TB.'
+            price={1158.0}
+            image='https://images-na.ssl-images-amazon.com/images/I/71btK4KS81L._AC_SL1500_.jpg'
             rating={4}
           />
           <Product
@@ -31,23 +42,24 @@ const Home = () => {
         <div className='home__row'>
           <Product
             id={uuidv4()}
-            title='New Apple iPad (10.2-inch, Wi-Fi, 128GB) - Space Gray (Latest Model, 8th Generation)'
-            price={598.99}
-            image='https://images-na.ssl-images-amazon.com/images/I/71UddJ3JSLL._AC_SL1500_.jpg'
+            title='New Apple iMac with Retina 4K Display (21.5-inch, 8GB RAM, 256GB SSD Storage)'
+            price={1435.95}
+            image='https://images-na.ssl-images-amazon.com/images/I/918idkuRlzL._AC_SL1500_.jpg'
             rating={5}
           />
           <Product
             id={uuidv4()}
-            title='Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric'
-            price={98.99}
-            image='https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$'
+            title='New Apple iMac Pro (27-inch, 3.0GHz 10-core Intel Xeon W Processor, 32GB RAM, 1TB SSD)'
+            price={5000.99}
+            image='https://images-na.ssl-images-amazon.com/images/I/71PDNyTXIzL._AC_SL1500_.jpg'
             rating={3}
           />
           <Product
             id={uuidv4()}
-            title='Apple iPad Mini, 5th Gen (Wi-Fi, 64GB) - Space Gray (Renewed)'
-            price={354.99}
-            image='https://images-na.ssl-images-amazon.com/images/I/71zMHkHX6rL._AC_SL1500_.jpg'
+            title='New Apple Mac Mini with Apple M1 Chip (8GB RAM, 512GB SSD Storage) - Latest Model
+                Capacity:512GB'
+            price={900.99}
+            image='https://images-na.ssl-images-amazon.com/images/I/71pcTYT%2BICL._AC_SL1500_.jpg'
             rating={5}
           />
         </div>

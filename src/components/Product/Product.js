@@ -35,8 +35,10 @@ const Product = ({ id, title, image, price, rating }) => {
             ))}
         </div>
       </div>
-      <img src={image} alt='' />
-      <button onClick={addToBasket}>Add to Basket</button>
+      <img src={image} alt={title} />
+      <button onClick={addToBasket} style={{ cursor: 'pointer' }}>
+        Add to Basket
+      </button>
     </div>
   );
 };
