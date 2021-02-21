@@ -4,7 +4,6 @@ import { useStateValue } from '../../context/StateProvider';
 import Subtotal from '../Subtotal/Subtotal';
 import CheckoutProduct from '../CheckoutProduct/CheckoutProduct';
 import FlipMove from 'react-flip-move';
-import Slider from '../Slider/Slider';
 
 const Checkout = () => {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -21,6 +20,7 @@ const Checkout = () => {
           <h3>Hello, {user?.email}</h3>
 
           <h2 className='checkout__title'>Your shopping Basket</h2>
+          {/* The counter part to this flipMove is in CheckOutProduct */}
           <FlipMove typeName={null}>
             {basket.map((item, index) => (
               <CheckoutProduct

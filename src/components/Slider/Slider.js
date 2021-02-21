@@ -33,7 +33,7 @@ const Slider = () => {
     <div className='home__page'>
       <Zoom {...zoomOutProperties}>
         {images.map((each, index) => (
-          <img key={index} src={each} />
+          <img key={index} src={each} alt='love and pics' />
         ))}
       </Zoom>
     </div>

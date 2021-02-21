@@ -1,10 +1,9 @@
 import React, { forwardRef } from 'react';
 import { useStateValue } from '../../context/StateProvider';
 import './CheckoutProduct.css';
-import FlipMove from 'react-flip-move';
 
 const CheckoutProduct = forwardRef(
-  ({ id, image, title, price, rating }, ref) => {
+  ({ id, image, title, price, rating, hideButton }, ref) => {
     const [{ basket, user }, dispatch] = useStateValue();
 
     const removeFromBasket = () => {
@@ -35,9 +34,11 @@ const CheckoutProduct = forwardRef(
                 <p key={i}>🌟</p>
               ))}
           </div>
-          <button onClick={removeFromBasket} style={{ cursor: 'pointer' }}>
-            Remove from Basket
-          </button>
+          {!hideButton && (
+            <button onClick={removeFromBasket} style={{ cursor: 'pointer' }}>
+              Remove from Basket
+            </button>
+          )}
         </div>
       </div>
     );
