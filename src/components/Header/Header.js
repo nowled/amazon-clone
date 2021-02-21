@@ -5,12 +5,12 @@ import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import { Link } from 'react-router-dom';
 import { useStateValue } from '../../context/StateProvider';
 import { auth } from '../firebase';
-
+//http:pngimg.com/uploads/amazon/amazon_PNG11.png
 // http://pngimg.com/uploads/amazon/amazon_PNG11.png
 // import aImg from '../images/amazon-associates.jpg';
-//pngimg.com/uploads/computer_pc/computer_pc_PNG7721.png
+//http:pngimg.com/uploads/computer_pc/computer_pc_PNG7721.png
 //http://pngimg.com/uploads/computer_pc/computer_pc_PNG17497.png
-
+//pngimg.com/uploads/amazon/amazon_PNG11.png
 //http://pngimg.com/uploads/vaccine/vaccine_PNG52.png
 
 //http://pngimg.com/uploads/un/un_PNG8.png
