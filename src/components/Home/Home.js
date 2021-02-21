@@ -3,9 +3,6 @@ import './Home.css';
 import Product from '../Product/Product';
 import { v4 as uuidv4 } from 'uuid';
 import 'react-slideshow-image';
-import Slider from '../Slider/Slider';
-// import { AnimateData } from '../AnimateHero/AnimateData';
-// import Hero from '../AnimateHero/Hero';
 
 /**
  * https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg
