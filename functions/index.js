@@ -32,4 +32,3 @@ app.post('/payments/create', async (req, res) => {
 
 // Listener
 exports.api = functions.https.onRequest(app);
-//http://localhost:5001/igotfiveonit-87979/us-central1/api
