@@ -52,9 +52,6 @@ const Payment = () => {
       })
       .then(({ paymentIntent }) => {
         //paymentIntent = payment confirmation
-        setSucceeded(true);
-        setError(null);
-        setProcessing(false);
 
         db.collection('users')
           .doc(user?.uid)
@@ -65,6 +62,10 @@ const Payment = () => {
             amount: paymentIntent.amount,
             created: paymentIntent.created,
           });
+
+        setSucceeded(true);
+        setError(null);
+        setProcessing(false);
 
         dispatch({
           type: 'EMPTY_BASKET',
